@@ -30,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    //Declaraciones de variables con respecto a los id de los elementos del html.
     const generateButtonCol = document.getElementById("generateCol");
     const generateButton = document.getElementById("generate");
     const dataTable = document.getElementById("data-table");
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let tiposDatos = [];
     
     
+
     // BOTON QUE GENERA LA CANTIDAD DE COLUMNAS DE LA TABLA, se le muestra al usuario una tabla con los campos a llenar
     generateButtonCol.addEventListener("click", function () {
         const botonGenerar = document.getElementById("BotonGenerar");
@@ -100,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+
     //RECOPILA LOS TIPOS DE DATOS Y NOMBRES DE LAS COLUMNAS DADAS POR EL USUARIO.
     function GetColumnasDatos(cantidadFilas){
         nombresColumnas = [];
@@ -114,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tiposDatos.push(tipoDato);
         }
     }
+
 
     //GENERAR LAS FILAS DE LA TABLA Y DEFINIR LOS DATOS A MOSTRAR EN EL JSON
     function generateData(tiposDatos, nombresColumnas) {
@@ -162,6 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             
     }
+
 
     //FUNCION QUE CAMBIA EL ENCABEZADO DE LA TABLA
     function changeHeadTable() {
@@ -317,6 +322,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return Math.random() < 0.5; // 50% de probabilidad de ser true o false
     }
 
+
     // BOTON QUE CREA LA TABLA A MOSTRAR EN PANTALLA
     generateButton.addEventListener("click", function () {
 
@@ -329,5 +335,6 @@ document.addEventListener("DOMContentLoaded", function () {
         generateData(tiposDatos, nombresColumnas);
 
     });
+    
 
 });
