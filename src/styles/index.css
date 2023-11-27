@@ -275,6 +275,15 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     transition: transform 0.2s; /*  animación de escala a la tabla */
+    max-width: 800px;
+    max-height: 400px;
+    overflow-y:hidden;
+}
+
+#contenedorTabla{
+    max-width: 800px;
+    max-height: 800px;
+    overflow-y:scroll;
 }
 
 table:hover {

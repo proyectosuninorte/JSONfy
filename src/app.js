@@ -185,6 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+
     // Funciones generadoras aleatorias para los datos
     function getDataGenerator(field) {
         if (field === "Selecciona") {
@@ -217,15 +218,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+
+    
     // Funciones generadoras aleatorias específicas
     function generateRandomID() {
-        return Math.floor(Math.random() * 1000000);
+        return Math.floor(Math.random() * 10000000000);
     }
 
     function generateRandomName() {
-        const names = ["Alice", "Bob", "Alinson", "Judith", "Esteban", "Charlie", "David", "Eve", "Frank", "Grace", "Helen", "Isaac", "Jack", 
-        "Sophia", "Oliver", "Liam", "Emma", "Ava", "Lucas", "Mia", "Zoe", "Ethan", "Luna", "Chloe", "Noah", "Harper", "Aiden", "Lily", "Grace", 
-        "Sophie", "Benjamin", "Ella", "Emily", "Michael", "William", "James", "Daniel", "Olivia", "Alexander", "Sebastian", "Evelyn", "Nora"];
+        const names = [
+            "Luis", "Ana", "Carlos", "María", "Juan", "Laura", "David", "Elena", "Alejandro", "Isabel",
+            "Miguel", "Sofía", "Javier", "Lucía", "Andrés", "Valeria", "José", "Paula", "Fernando", "Carmen",
+            "Roberto", "Raquel", "Diego", "Patricia", "Santiago", "Ana María", "Daniel", "Beatriz", "Jorge", "Silvia",
+            "Alberto", "Natalia", "Francisco", "Rocío", "Joaquín", "Victoria", "Manuel", "Eva", "Ignacio", "Cristina",
+            "Pedro", "Martina", "Rafael", "Miriam", "Gonzalo", "Elena María", "Pablo", "Adriana", "Emilio", "Lorena",
+            "Álvaro", "Claudia", "Héctor", "Nerea", "Víctor", "Alicia", "Rubén", "Vanessa", "Óscar", "Natalie",
+            "Félix", "Gabriela", "Antonio", "Verónica", "Alfonso", "Susana", "Jaime", "Inés", "Enrique", "Marta",
+            "Adrián", "Irene", "Arturo", "Yolanda", "Raul", "Julia", "Mariano", "Celia", "Hugo", "Esther",
+            "Eduardo", "Carolina", "Ricardo", "Monica", "Tomás", "Aurora", "Sebastián", "Emma", "Nicolás", "Patricia"
+          ];
         return names[Math.floor(Math.random() * names.length)];
     }
 
@@ -284,7 +295,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function generateRandomCategory() {
-        const categories = ["Electrónica", "Ropa", "Hogar y Jardín", "Libros", "Deportes y Aire Libre", "Juguetes", "Salud y Belleza"];
+        const categories = [
+            "Electrónica", "Ropa", "Hogar", "Deportes", "Libros", "Juguetes", "Joyería", "Belleza", "Electrodomésticos", "Muebles",
+            "Automóviles", "Tecnología", "Alimentos", "Calzado", "Viajes", "Instrumentos Musicales", "Mascotas", "Arte y Manualidades", "Salud", "Películas y Series",
+            "Herramientas", "Música", "Fotografía", "Computadoras", "Fitness", "Jardinería", "Bebés", "Aire libre", "Materiales de oficina", "Camping",
+            "Instrumentos científicos", "Artículos para fiestas", "Ropa de cama", "Electrodomésticos de cocina", "Iluminación", "Relojes", "Bolsos y carteras", "Materiales de arte", "Decoración del hogar", "Videojuegos",
+            "Cuidado personal", "Ropa interior", "Equipo de sonido", "Vestidos", "Suministros de mascotas", "Juegos de mesa", "Equipos deportivos", "Maquillaje", "Suplementos nutricionales", "Cocina y comedor",
+            "Bicicletas", "Ropa deportiva", "Calzado deportivo", "Gafas de sol", "Ropa de playa", "Cámaras", "Ropa para niños", "Pelotas y juguetes para exteriores", "Herramientas eléctricas", "Sillas y mesas",
+            "Material de escritura", "Productos para el cuidado del cabello", "Muebles para niños", "Cajas de almacenamiento", "Juegos de construcción", "Ropa de noche", "Artículos para el hogar", "Utensilios de cocina", "Juegos educativos", "Teclados y ratones",
+            "Perfumes", "Artículos de baño", "Ropa formal", "Muebles de jardín", "Disfraces", "Instrumentos deportivos", "Equipos de acampada", "Joyas de plata", "Libros para niños", "Juegos de simulación",
+            "Baterías y cargadores", "Instrumentos de viento", "Ropa de oficina", "Zapatos formales", "Bolsos de viaje", "Suministros de limpieza", "Bebidas alcohólicas", "Figuras de acción", "Tablas de skate", "Joyas de oro"
+          ];
         return categories[Math.floor(Math.random() * categories.length)];
     }
 
