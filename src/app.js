@@ -185,7 +185,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-
     // Funciones generadoras aleatorias para los datos
     function getDataGenerator(field) {
         if (field === "Selecciona") {
@@ -218,8 +217,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-
-    
     // Funciones generadoras aleatorias específicas
     function generateRandomID() {
         return Math.floor(Math.random() * 1000000);

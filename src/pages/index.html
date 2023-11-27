@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Archivos</title>
+    <title>fy</title>
     <link rel="stylesheet" href="/src/styles/index.css">
     <link rel="icon" href="/src/img/LogoMiniOficial.ico" type="image/x-icon">
 </head>
@@ -21,6 +21,7 @@
             <h1>Generador de Archivos</h1>
         </div>
 
+
         <div id="cantColumns">
             <label for="num-columns" >Número de columnas: </label>
             <input id="casillaCol" type="text" pattern="[0-9]*" inputmode="numeric">
@@ -31,6 +32,7 @@
             <button id="generateCol">Generar Columnas</button>
         </div>
 
+
         <div id="tablaContainer"></div>
 
         
@@ -39,18 +41,22 @@
             <input id="cantidadRegistros" type="text" pattern="[0-9]*" inputmode="numeric">
         </div>
 
+
         <div id="BotonGenerar" style="display: none;" >
             <button id="generate">Generar Datos</button>
         </div>
 
+
         <a id="download-link" style="display: none;" >Descargar JSON</a>
         
+
         <table id="principal-table" style="display: none;">
             <thead>
                 <tr id="table-headers"></tr>
             </thead>
             <tbody id="data-table"></tbody>
         </table>
+
         
     </div>
 
