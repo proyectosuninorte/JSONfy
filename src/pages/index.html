@@ -2,44 +2,56 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fy</title>
+    <title>Generador de Archivos</title>
     <link rel="stylesheet" href="/src/styles/index.css">
     <link rel="icon" href="/src/img/LogoMiniOficial.ico" type="image/x-icon">
 </head>
 <body>
     <div class="intro">
         <img src="/src/img/LogoFondoNegroCompleto.png" alt="clarkode logo" class="imagenLogo">
-        <p>Generador de Archivos</p>
+        <p> Generador de Archivos</p>
     </div> 
 
     <div class="content">
+
+        <div id="Logo">
+            <img src="/src/img/LogoFondoBlancoCompleto.png" alt="clarkode logo" class="imagenLogo">
+            <h1>Generador de Archivos</h1>
+        </div>
+
+        <div id="cantColumns">
+            <label for="num-columns" >Número de columnas: </label>
+            <input id="casillaCol" type="text" pattern="[0-9]*" inputmode="numeric">
+        </div>
+
+
+        <div id="BotonGenerarCol" class="button">
+            <button id="generateCol">Generar Columnas</button>
+        </div>
+
+        <div id="tablaContainer"></div>
+
         
-        <img src="/src/img/LogoFondoBlancoCompleto.png" alt="clarkode logo" class="imagenLogo">
-        <h1>Generador de Archivos</h1>
+        <div id="casillaRegistros" style="display: none;">
+            <label>Cantidad de Registros:</label>
+            <input id="cantidadRegistros" type="text" pattern="[0-9]*" inputmode="numeric">
+        </div>
+
+        <div id="BotonGenerar" style="display: none;" >
+            <button id="generate">Generar Datos</button>
+        </div>
+
+        <a id="download-link" style="display: none;" >Descargar JSON</a>
         
-        <label for="data-type">Selecciona el tipo de datos:</label>
-        <select id="data-type">
-            <option value="Selecciona">Selecciona</option>
-            <option value="personas">Personas</option>
-            <option value="productos">Productos</option>
-            <option value="paises">Países</option>
-        </select>
-        <button id="generate">Generar Datos</button>
-        <table id="principal-table">
+        <table id="principal-table" style="display: none;">
             <thead>
-                <tr>
-                    <th>Columna 1</th>
-                    <th>Columna 2</th>
-                    <th>Columna 3</th>
-                    <th>Columna 4</th>
-                </tr>
+                <tr id="table-headers"></tr>
             </thead>
             <tbody id="data-table"></tbody>
         </table>
         
-        <a id="download-link" style="display: none;">Descargar JSON</a>
     </div>
 
     <script src="/src/app.js"></script>
