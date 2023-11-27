@@ -267,7 +267,7 @@ button {
 
 button:hover {
     background-color: #2874a6;
-    transform: scale(1.1); /* Los botones se ampliarán ligeramente al pasar el mouse por encima */
+    transform: scale(1.03); /* Los botones se ampliarán ligeramente al pasar el mouse por encima */
 }
 
 table {
@@ -278,7 +278,7 @@ table {
 }
 
 table:hover {
-    transform: scale(1.01); /* La tabla se expandirá ligeramente al pasar el mouse por encima */
+    transform: scale(1.003); /* La tabla se expandirá ligeramente al pasar el mouse por encima */
 }
 
 th, td {
@@ -310,5 +310,5 @@ a {
 
 a:hover {
     background-color: #2874a6;
-    transform: scale(1.1); /* Los enlaces se ampliarán ligeramente al pasar el mouse por encima */
+    transform: scale(1.02); /* Los enlaces se ampliarán ligeramente al pasar el mouse por encima */
 }
